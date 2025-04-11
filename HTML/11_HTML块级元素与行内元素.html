@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素和行内元素</title>
+</head>
+<body>
+    <!-- 块级元素，特点：独占一行 -->
+    <marquee>帅帅维</marquee>
+    <marquee>帅帅维</marquee>
+    <h1>帅帅维</h1>
+    <h1>帅帅维</h1>
+    <p>帅帅维</p>
+    <p>帅帅维</p>
+    <div>帅帅维</div>
+    <div>帅帅维</div>
+    <!-- 行内元素，特点：不独占一行 -->
+    <input type="text">
+    <input type="text">
+    <span>帅帅维</span>
+    <span>帅帅维</span>
+
+    <!-- 规则1：块级元素内可以写行内元素、块级元素（几乎都能写） -->
+     <div>
+        <span>帅帅维</span>
+        <input type="text">
+        <div>帅帅维</div>
+     </div>
+
+     <!-- 规则2：行内元素内能写行内元素，但不能写块级元素 -->
+    <span>
+        <span>帅帅维</span>
+        <input type="text">
+    </span>
+
+    <!-- h1到h6不能互相嵌套 -->
+     <!-- 会把内嵌的甩出来 -->
+     <h1>帅帅维<h2>帅帅维</h2></h1>
+
+    <!-- 特殊规则：p标签不能写块元素 -->
+     <p>
+        <h1>帅帅维</h1>
+     </p>
+    
+</body>
+</html>
