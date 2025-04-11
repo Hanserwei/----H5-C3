@@ -14,7 +14,7 @@
 ```
 ├── HTML/          # HTML相关示例和练习
 ├── CSS/           # CSS样式和布局练习
-├── images/        # 项目使用的图片资源
+├── images/icons   # 项目使用的图片资源
 └── README.md      # 项目说明文档
 ```
 
