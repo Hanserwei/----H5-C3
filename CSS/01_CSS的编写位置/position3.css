@@ -1,0 +1,17 @@
+h1{
+    color: aquamarine;
+    font-size: 60px;
+    font-family:Maple Mono NF CN;
+}
+h2{
+    color: bisque;
+    font-size: 50px;
+    font-family: Maple Mono NF CN;
+}
+p{
+    color: #000;
+    font-size: 40px;
+}
+img{
+    width: 640px;
+}
