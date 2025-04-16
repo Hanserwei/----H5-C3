@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        ul li {
+            color: red;
+        }
+        ol li {
+            color: green;
+        }
+        ul li a {
+            color: aqua;
+        }
+        ol li a {
+            color: bisque;
+        }
+        .subject li {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>抽烟</li>
+        <li>喝酒</li>
+        <li>烫头</li>
+        <li>
+            <a href="#">张三</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+        <li>
+            <a href="#">李四</a>
+        </li>
+    </ol>
+    <hr>
+    <ol class="subject">
+        <li>前端</li>
+        <li>Java</li>
+        <li>大数据</li>
+    </ol>
+</body>
+</html>
