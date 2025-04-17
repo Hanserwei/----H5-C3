@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟选择器</title>
+    <style>
+        /* 向下找紧紧相邻的兄弟 */
+        div+p {
+            color: blue;
+        }
+        /* 选中div后的所有p元素 */
+        div~p {
+            font-size: 60px;
+        }
+        li+li {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>尚硅谷</div>
+    <p>前端</p>
+    <p>Java</p>
+    <p>大数据</p>
+    <p>UI</p>
+    <ul>
+        <li>第一</li>
+        <li>第二</li>
+        <li>第三</li>
+        <li>第四</li>
+        <li>第五</li>
+    </ul>
+</body>
+</html>

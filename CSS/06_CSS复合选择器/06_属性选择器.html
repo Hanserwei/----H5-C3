@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* 第一种写法，选种有title属性的元素 */
+        [title] {
+            color: blue;
+        }
+        /* 第二种写法,选中具有title属性 ，且属性值为atlike1的元素 */
+        [title="atlike1"] {
+            font-size: 60px;
+        }
+        /* 第三种写法,选中具有title属性 ，且属性值为a开头的元素 */
+        [title^="a"] {
+            font-family: Maple Mono NF CN;
+        }
+        /* 第四种写法,选中具有title属性 ，且属性值为c结尾的元素 */
+        [title$="c"] {
+            color: cornflowerblue;
+        }
+        /* 第五种写法,选中具有title属性 ，且属性值包含ab的元素 */
+        [title*="ab"] {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div title="atlike1">帅帅维1</div>
+    <div title="atlike2">帅帅维2</div>
+    <div title="abc">帅帅维3</div>
+    <div title="abcd">帅帅维4</div>
+</body>
+</html>
