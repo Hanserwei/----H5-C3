@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态伪类</title>
+    <style>
+        /* 没有访问过的a元素 */
+        a:link {
+            color: orange;
+        }
+        /* 访问过的a元素 */
+        a:visited {
+            color: gray;
+        }
+        /* 选中的是鼠标悬浮的a元素 */
+        a:hover {
+            color: chocolate;
+        }
+        /* 选中的是激活状态的a元素 */
+        a:active {
+            color: green;
+        }
+        /* 顺序lvha */
+        span:hover {
+            color: aqua;
+        }
+        span:active {
+            color: antiquewhite;
+        }
+        /* focus表单类元素独有 */
+        input:focus,
+        select:focus {
+            color: orange;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <span>帅帅维</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <select>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="sichuan">四川</option>
+    </select>
+</body>
+</html>

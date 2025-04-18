@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类1</title>
+    <style>
+        /* 选中的是div的第一个儿子p元素 结构1 */
+        #a>p:first-child {
+            color: red;
+        }
+        /* 选中的是div的第一个儿子p元素 结构2 */
+        #b>p:first-child {
+            color: red;
+        }
+        /* 选中的是div的第一个儿子p元素 结构3 */
+        #c>p:first-child {
+            color: red;
+        }
+        /* 选中的是div的后代p元素，p的父级是谁不重要，但是p必须是其父级的第一个儿子 结构4 */
+        #d p:first-child {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <div id="a">
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div>
+    <!-- 结构2 -->
+    <div id="b">
+        <span>张三：98分</span>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div>
+    <!-- 结构3 -->
+    <div id="c">
+        <marquee>
+            <p>张三：98分</p>
+        </marquee>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div>
+    <!-- 结构4 -->
+    <div id="d">
+        <marquee>
+            <p>张三：98分</p>
+        </marquee>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div>
+</body>
+</html>
