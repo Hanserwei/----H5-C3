@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器优先级-详细聊</title>
+    <style>
+        .container span.slogan{
+            font-size: 20px;
+            color: blue;
+        }
+        div>p>span:nth-child(1){
+            font-size: 40px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <span class="slogan">我是帅帅维，我使用的是小鹤双拼输入法！</span>
+            <span>打字速度超过全拼输入法，但是你得熟悉</span>
+        </p>
+    </div>
+</body>
+</html>
